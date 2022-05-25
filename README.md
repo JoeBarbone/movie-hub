@@ -15,7 +15,7 @@ As a movie watcher it gives me movie info and ratings to see if I want to watch 
 
 
 WIREFRAME:
-Lucidapp/lucid-chart
+https://lucidchart.com/
 
 
 API IDENTIFIED:
