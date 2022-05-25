@@ -1,0 +1,58 @@
+.container {
+    xborder: 10px solid red;
+    xheight: 100vh;
+}
+
+.input-window {
+    xborder: 1px solid blue;
+    xbackground-color: blue;
+    xheight: 500px;
+}
+
+.input-panel {
+    border: 2px solid black;
+    padding: 50px;
+    box-shadow: 3px 4px 5px grey;
+    width: 100%;
+}
+
+.input-panel input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.input-panel button {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card img {
+    height: 100%;
+}
+
+.card {
+    display: none;
+    box-shadow: 3px 4px 5px grey;
+}
+
+/* .movie-info {
+    
+    xborder: 1px solid orange;
+    xbackground-color: orange;
+    xheight: 500px;
+    
+} */
+
+.ratings {
+    display: none;
+}
+
+.user-ratings {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+}
