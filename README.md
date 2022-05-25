@@ -19,8 +19,8 @@ Lucidapp/lucid-chart
 
 
 API IDENTIFIED:
-imdv-api.com/api/english
-OMDBApi.com
+https://www.omdbapi.com
+https://imdb-api.com/en/API/Ratings
 
 
 ISSUES CREATED AND ASSIGNED:
