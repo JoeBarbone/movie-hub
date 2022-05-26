@@ -1,58 +1,53 @@
+/* Tag Selectors */
+
+h1 {
+    text-align: center;
+    font-size: 50px;;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ee3957;
+}
+
+/* class Selectors */
+
 .container {
-    xborder: 10px solid red;
-    xheight: 100vh;
+    background-color: #fdfcfc;
+    height: 900px;
+    border-radius: 10px;
+
 }
 
-.input-window {
-    xborder: 1px solid blue;
-    xbackground-color: blue;
-    xheight: 500px;
+.box {
+    background-color: #fad4d41c;
+    height: 250px;
+    border-radius: 10px;
+    margin: 25px;
+    display: block;
 }
 
-.input-panel {
-    border: 2px solid black;
-    padding: 50px;
-    box-shadow: 3px 4px 5px grey;
-    width: 100%;
+.result-box {
+    background-color: #fad4d41c;
+    height: 800px;
+    position: relative;
+    bottom: 830px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-.input-panel input {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-bottom: 2px solid black;
+.input-history {
+    background-color: rgba(241, 207, 207, 0.144);
+    height: 150px;
+    border-radius: 10px;
 }
 
-.input-panel button {
-    margin-top: 50px;
-    width: 100%;
-}
+@media screen and (max-width: 765px) {
 
-.card img {
-    height: 100%;
-}
-
-.card {
-    display: none;
-    box-shadow: 3px 4px 5px grey;
-}
-
-/* .movie-info {
+    .result-box {
+        background-color: #fad4d41c;
+        height: 800px;
+        position: relative;
+        top: 100px;
+        border-radius: 10px;
+        display: block;
+    }
     
-    xborder: 1px solid orange;
-    xbackground-color: orange;
-    xheight: 500px;
-    
-} */
-
-.ratings {
-    display: none;
-}
-
-.user-ratings {
-    border: 1px solid black;
-    padding: 10px;
-    font-weight: bold;
-    width: 100%;
 }
