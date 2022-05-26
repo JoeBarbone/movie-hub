@@ -7,7 +7,7 @@ Movie Hub  gives movie info and ratings
 
 
 REPOSITORY CONFIGURED:
-Joe is working on that tonight.
+Repo is created and everyone is up to date. Basic site concept completed now working out the styling and ideas for addtional content.
 
 
 USER STORY:
@@ -16,6 +16,9 @@ As a movie watcher it gives me movie info and ratings to see if I want to watch 
 
 WIREFRAME:
 https://lucidchart.com/
+
+
+CSS FRAMEWORK: Bulma
 
 
 API IDENTIFIED:
