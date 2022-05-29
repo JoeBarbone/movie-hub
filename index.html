@@ -4,61 +4,194 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Movie Hub</title>
-        <meta name="description" content="">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie Hub</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1>Movie Hub</h1>
+    <h1>Movie Hub</h1>
 
-        <div class="column is-full container">
+    <div class="column is-full container mobile tablet">
 
-            
+        <!-- first box -->
 
-            <div  class="column is-half box">
-                <input class="input is-normal" type="text" placeholder="Normal input">
-                <button class="button is-danger is-fullwidth">Submit</button>
-                <div  class="column is-full input-history">
+        <div class="column is-half box">
+            <h2 class="ratings-title">title</h2>
+            <input class="input is-normal" type="text" placeholder="Normal input">
+            <button class="button is-danger is-fullwidth">Submit</button>
+            <div class="column is-full input-history">
+                <div class="column list ">
+                    <p><strong>Input History</strong></p>
+                </div>
+                <div class="column  list ">
+                    <p></p>
+                </div>
+                <div class="column  list ">
+                    <p></p>
+                </div>
+                <div class="column  list last-list">
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- second box -->
+
+        <div class="column is-half  box">
+
+            <h2 class="ratings-title">ratings</h2>
+
+            <!--  first column inside the box -->
+
+            <div class="ratings-box" class="column  is-half box">
+                <div class="ratings" class="column list  is-half">
+                    <p><strong>Title:</strong></p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p>IMBD ID:</p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p>IMBD Rating:</p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list last-list  is-half">
+                    <p>Spoiled Potato rating:</p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list last-list  is-half">
+                    <p>Movie DB Rating:</p>
+                </div>
 
 
+            </div>
 
+
+            <!--  second column inside the box -->
+
+            <div class="ratings-box" class="column  is-half is-offset-8 box">
+                <div class="ratings" class="column list  is-half">
+                    <p></p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p> </p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p> </p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list last-list  is-half">
+                    <p> </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- third box -->
+
+        <div class="column is-half  box demographic-box">
+
+
+            <h2 class="ratings-title">demographic ratings</h2>
+
+            <!--  first column inside the box -->
+
+            <div class="column is-one-third ">
+                <div class="column list ">
+                    <p><strong>Age group</strong></p>
+                </div>
+                <div class="column  list ">
+                    <p><strong>Under 19</strong></p>
+                </div>
+                <div class="column  list ">
+                    <p><strong>18 to 29</strong></p>
+                </div>
+                <div class="column list last-list">
+                    <p><strong>Over 45</strong></p>
+                </div>
+                <div class="column  list ">
+                    <p><strong>Overall</strong></p>
                 </div>
             </div>
 
+            <!--  first column inside the box -->
             
-            <div  class="column is-half  box">
-
-
-
+            <div class="column is-one-third is-offset-4">
+                <div class="column demographic-list ">
+                    <p><strong>User Rating</strong></p>
+                </div>
+                <div class="column  demographic-list ">
+                    <p>6.0</p>
+                </div>
+                <div class="column  demographic-list ">
+                    <p>5.7</p>
+                </div>
+                <div class="column  demographic-list last-list">
+                    <p>5.8</p>
+                </div>
+                <div class="column  demographic-list ">
+                    <p>5.8</p>
+                </div>
             </div>
-
-            <div  class="column is-half  box">
-
-
-
+            <div class="column is-one-third is-offset-8">
+                <div class="column demographic-list2 ">
+                    <p><strong>Votes</strong></p>
+                </div>
+                <div class="column  demographic-list2 ">
+                    <p>1</p>
+                </div>
+                <div class="column  demographic-list2 ">
+                    <p>294</p>
+                </div>
+                <div class="column  demographic-list2 last-list">
+                    <p>3,426</p>
+                </div>
+                <div class="column  demographic-list2 ">
+                    <p>9,600</p>
+                </div>
             </div>
-           <div  class="column is-one-third box result-box is-offset-7">
+        </div>
 
+        <!-- fourth box -->
+
+        <div id="result-box" class="column is-one-third box  is-offset-7"> 
+            <h2 class="ratings-title">title</h2>
+            <img src="not-found.png" />
+            <p class="fourth-box-p">Lorem ipsum dolor sit amet</p>
+            <p class="fourth-box-p">Lorem ipsum dolor sit amet</p>
+            <p class="fourth-box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+
+
+        <!-- fifith box -->
+
+        <div class="column is-11 box " id="last-box">
+            <h2 class="ratings-title">streaming platforms</h2>
+        </div>
 
 
         </div>
-            
+    </div>
+    <script src="" async defer></script>
+</body>
 
-           
-            
-        </div>
-        
-        <script src="" async defer></script>
-    </body>
 </html>
