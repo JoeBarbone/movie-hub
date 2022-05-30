@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>omDB Movie App</title>
+  </head>
+  <body>
+    <div
+      style="border: 1px solid black"
+      class="container d-flex align-items-start xjustify-content-between"
+    >
+      <div
+        class="row d-flex flex-column align-items-center col-6 input-window m-3"
+      >
+        <h1 class="pt-3">omDB Movie App</h1>
 
-</head>
-<body>
-    <div style="border: 1px solid black;" class="container d-flex align-items-start xjustify-content-between">
-        
-        <div class="row d-flex flex-column align-items-center col-6 input-window m-3">
-            
-            <h1 class="pt-3">omDB Movie App</h1>
-
-            <div class="d-flex flex-column input-panel my-auto">
-                <form id="input-form">
-                    <input class="my-auto" id="movie-title" type="text" placeholder="enter movie title">
-                    <button class="btn btn-danger" type="submit">submit</button>
-                </form>
-            </div>
-
-            <div class="d-flex flex-column input-panel">
-                <h1>Ratings</h1>
-
-                <div id="ratings" class="ratings input-panel">
-                    <!-- remove class and id below if okay -->
-                    <div id="xratings" class="xinput-panel xratings">
-
-
-                    </div>
-                </div>
-                
-            </div>
-
-
-            <div class="d-flex flex-column input-panel">
-                <h1>Nerd Ratings</h1>
-
-                <div id="demo-ratings" class="ratings">
-                    
-                    <div class="d-flex justify-content-between user-ratings input-panel">
-                        <div id="age-group">
-
-                        </div>
-                        
-                        <div id="user-rating">
-
-                        </div>
-
-                        <div id="votes" class="text-right">
-
-                        </div>
-                    </div>
-
-                </div>
-
-                
-            </div>
-
+        <div class="d-flex flex-column input-panel my-auto">
+          <form id="input-form">
+            <input
+              class="my-auto"
+              id="movie-title"
+              type="text"
+              placeholder="enter movie title"
+            />
+            <button class="btn btn-danger" type="submit">submit</button>
+          </form>
         </div>
 
-        <div class="row d-flex flex-column col-6 my-auto mt-5 movie-info">
-            <div id="display-card" class="card">
-                <div id="poster" class="text-center"></div>
-                
-                <div id="movie-info" class="p-3">Movie Info</div>
+        <div class="d-flex flex-column input-panel">
+          <h1>Ratings</h1>
 
-                <div class="card-body">
-                    <h5><p class="card-title px-3" id="title"></p></h5>
-                    <p class="card-text px-3" id="year"></p>
-                    <p class="card-text px-3" id="rating"></p>
-                    <p class="card-text px-3" id="actors"></p>
-                    <p class="card-text px-3" id="plot"></p>
-                </div>
+          <div id="ratings" class="ratings input-panel">
+            <!-- remove class and id below if okay -->
+            <div id="xratings" class="xinput-panel xratings">
+              <script src="js/test.js"></script>
             </div>
+          </div>
         </div>
-        
+
+        <div class="d-flex flex-column input-panel">
+          <h1>Nerd Ratings</h1>
+
+          <div id="demo-ratings" class="ratings">
+            <div
+              class="d-flex justify-content-between user-ratings input-panel"
+            >
+              <div id="age-group"></div>
+
+              <div id="user-rating"></div>
+
+              <div id="votes" class="text-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex flex-column col-6 my-auto mt-5 movie-info">
+        <div id="display-card" class="card">
+          <div id="poster" class="text-center"></div>
+
+          <div id="movie-info" class="p-3">Movie Info</div>
+
+          <div class="card-body">
+            <h5><p class="card-title px-3" id="title"></p></h5>
+            <p class="card-text px-3" id="year"></p>
+            <p class="card-text px-3" id="rating"></p>
+            <p class="card-text px-3" id="actors"></p>
+            <p class="card-text px-3" id="plot"></p>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
