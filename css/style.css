@@ -1,6 +1,9 @@
 body {
-  background-image: url("popcorn-background.jpg");
+  background-image: url("../popcorn-background.jpg");
   background-color: #fff;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 h1 {
