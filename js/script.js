@@ -167,7 +167,7 @@ var getRatings = function(imdbid) {
 
             //console.log("<h1>Movie Information</h1><br />Title: " + title + "\n" + "IMDBID: " + imdbid + "\n" + "Spoiled Potatoes Rating: " + rt + "/100 \n" + "The Movie DB Rating: " + tmdb + "/10");
 
-            ratingsEl.innerHTML = "<p class='title is-1'>Movie Information</p>" + 
+            ratingsEl.innerHTML = // "<p class='title is-1'>Movie Information</p>" + 
                 "<span class='pl-3 has-text-weight-bold'>Title:</span> " + title + "<br />" + 
                 "<span class='pl-3 has-text-weight-bold'>IMDB ID:</span> " + imdbid + "<br /><br /><br />" +
                 "<p class='subtitle is-3'>Critic Ratings</p>" + 
@@ -209,8 +209,8 @@ var getDemographicRatings = function(imdbid) {
             
             var numberFormatter = Intl.NumberFormat("en-US");
 
-            demoRatingsHeaderEl.innerHTML = "<p class='subtitle is-3'>Demographic Ratings</p>"
-            demoRatingsHeaderContainerEl.appendChild(demoRatingsHeaderEl);
+            // demoRatingsHeaderEl.innerHTML = "<p class='subtitle is-3'>Demographic Ratings</p>"
+            // demoRatingsHeaderContainerEl.appendChild(demoRatingsHeaderEl);
 
             // sets user ratings headings
             ageGroupEl.innerHTML = "Age Group<br /><br />" + "Under 18<br />" + "18 to 29<br />" + "30 to 44<br />" + "Over 45<br /><br />" + "Overall";
