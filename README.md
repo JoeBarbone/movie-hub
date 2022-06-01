@@ -12,7 +12,8 @@ As a movie-watcher, Movie Hub gives me movie information and ratings in one plac
 
 ## Wireframe:
 
-[Untitled 2.pdf](https://github.com/JoeBarbone/movie-hub/files/8810148/Untitled.2.pdf)
+[Movie-Hub.pdf](https://github.com/JoeBarbone/movie-hub/files/8810176/Movie-Hub.pdf)
+
 
 
 - [Lucid](https://lucidchart.com/)
