@@ -1,6 +1,6 @@
 
 
-### Movie-Hub
+# Movie-Hub
 
 ## Project Description:
 
