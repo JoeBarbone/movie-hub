@@ -2,10 +2,10 @@
 
 //#ratings
 
-document.getElementById("ratings").innerHTML = "<p class='title is-1'>Movie Information</p>" + 
+document.getElementById("ratings").innerHTML = "<p class='title is-2'>Movie Information</p>" + 
                  "<span class='pl-3 has-text-weight-bold'>Title:</span> " + "Switch" + "<br />" + 
                  "<span class='pl-3 has-text-weight-bold'>IMDB ID:</span> " + "tt012968" + "<br /><br /><br />" +
-                 "<p class='subtitle is-3'>Critic Ratings</p>" + 
+                 "<p class='subtitle is-4'>Critic Ratings</p>" + 
                  "<strong class='pl-3'><a href='https://www.imdb.com/title/" + "tt012968" + 
                  "' target='_blank'>" + "IMDB Rating:</strong> " + "6.8" + "/10</a><br />" + 
                  "<strong class='pl-3'>Spoiled Potatoes Rating:</strong> " + "68" + "/100 <br />" + 
@@ -24,7 +24,7 @@ document.getElementById("user-rating").innerHTML = "User Rating<br /><br />" +
                 "6.0/10";
 
 
-document.getElementById("votes").innerHTML = "1" + "<br />" +
+document.getElementById("votes").innerHTML = "Votes<br /><br />" + "1" + "<br />" +
     "294" + "<br />" +
     "3426" + "<br />" +
     "9600" + "<br /><br />" +

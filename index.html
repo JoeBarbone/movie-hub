@@ -30,8 +30,10 @@
 
         <div class="column is-half box">
             <h2 class="ratings-title">title</h2>
-            <input class="input is-normal" type="text" placeholder="Normal input">
-            <button class="button is-danger is-fullwidth">Submit</button>
+            <form id="input-form">
+                <input class="input is-normal" id="movie-title" type="text" placeholder="Normal input">
+                <button class="button is-danger is-fullwidth" type="submit">Submit</button>
+            </form>
             <div class="column is-full input-history">
                 <div class="column list ">
                     <p><strong>Input History</strong></p>
@@ -58,10 +60,10 @@
             <!--  first column inside the box -->
 
             <div class="ratings-box" class="column  is-half box">
-                <div class="ratings" class="column list  is-half">
-                    <p><strong>Title:</strong></p>
+                <div class="ratings" class="column list is-half">
+                    <div id="ratings"></div>
                 </div>
-                <br>
+                <!-- <br>
                 <div class="ratings" class="column  list  is-half">
                     <p>IMBD ID:</p>
                 </div>
@@ -76,7 +78,7 @@
                 <br>
                 <div class="ratings" class="column  list last-list  is-half">
                     <p>Movie DB Rating:</p>
-                </div>
+                </div> -->
 
 
             </div>
@@ -108,77 +110,41 @@
 
         <!-- third box -->
 
-        <div class="column is-half  box demographic-box">
+        <div class="column is-half box demographic-box">
 
 
             <h2 class="ratings-title">demographic ratings</h2>
 
-            <!--  first column inside the box -->
+            <div id="demo-ratings-header"></div>
+            <div id="demo-ratings" class="demo-ratings is-flex is-justify-content-space-between has-text-centered">
+                
+                <div id="age-group">
 
-            <div class="column is-one-third ">
-                <div class="column list ">
-                    <p><strong>Age group</strong></p>
                 </div>
-                <div class="column  list ">
-                    <p><strong>Under 19</strong></p>
-                </div>
-                <div class="column  list ">
-                    <p><strong>18 to 29</strong></p>
-                </div>
-                <div class="column list last-list">
-                    <p><strong>Over 45</strong></p>
-                </div>
-                <div class="column  list ">
-                    <p><strong>Overall</strong></p>
-                </div>
-            </div>
 
-            <!--  first column inside the box -->
+                <div id="user-rating">
+
+                </div>
+
+                <div id="votes" class="is-flex has-text-right">
             
-            <div class="column is-one-third is-offset-4">
-                <div class="column demographic-list ">
-                    <p><strong>User Rating</strong></p>
-                </div>
-                <div class="column  demographic-list ">
-                    <p>6.0</p>
-                </div>
-                <div class="column  demographic-list ">
-                    <p>5.7</p>
-                </div>
-                <div class="column  demographic-list last-list">
-                    <p>5.8</p>
-                </div>
-                <div class="column  demographic-list ">
-                    <p>5.8</p>
                 </div>
             </div>
-            <div class="column is-one-third is-offset-8">
-                <div class="column demographic-list2 ">
-                    <p><strong>Votes</strong></p>
-                </div>
-                <div class="column  demographic-list2 ">
-                    <p>1</p>
-                </div>
-                <div class="column  demographic-list2 ">
-                    <p>294</p>
-                </div>
-                <div class="column  demographic-list2 last-list">
-                    <p>3,426</p>
-                </div>
-                <div class="column  demographic-list2 ">
-                    <p>9,600</p>
-                </div>
-            </div>
+
         </div>
 
         <!-- fourth box -->
 
         <div id="result-box" class="column is-one-third box  is-offset-7"> 
-            <h2 class="ratings-title">title</h2>
-            <img src="not-found.png" />
-            <p class="fourth-box-p">Lorem ipsum dolor sit amet</p>
-            <p class="fourth-box-p">Lorem ipsum dolor sit amet</p>
-            <p class="fourth-box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <!-- <h2 class="ratings-title">title</h2> -->
+            <div id="poster">
+            <div id="movie-info"></div>
+
+            </div>
+            <!-- <img src="https://m.media-amazon.com/images/M/MV5BNzM2YjIwMzgtZTg4Yy00NmJlLWIzOTYtYTQ0Zjc3NjIyZDcyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" /> -->
+            <!-- <p class="fourth-box-p">Lorem ipsum dolor sit amet</p> -->
+            <!-- <p class="fourth-box-p">Lorem ipsum dolor sit amet</p> -->
+            <!-- <p class="fourth-box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> -->
         </div>
 
 
@@ -191,7 +157,7 @@
 
         </div>
     </div>
-    <script src="" async defer></script>
+    <script src="js/script.js" async defer></script>
 </body>
 
 </html>

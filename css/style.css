@@ -1,5 +1,13 @@
 /* Tag Selectors */
 
+body {
+    background-image: url("../images/popcorn-background.jpg");
+    background-color: #fff;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
 h1 {
     text-align: center;
     font-size: 50px;
@@ -39,7 +47,6 @@ img {
 
 .box {
     background-color: #f5efef1c;
-    height: 300px;
     border-radius: 10px;
     margin: 25px;
     display: block;
@@ -47,9 +54,9 @@ img {
 
 #result-box {
     background-color: #fcfcfc1c;
-    height: 970px;
+    height: 1070px;
     position: relative;
-    bottom: 990px;
+    bottom: 1120px;
     border-radius: 10px;
     display: inline-block;
 }
@@ -204,7 +211,7 @@ img {
     }
 
     .demographic-box {
-        height: 900px;
+       height: 900px;
     }
 
     #last-box {
