@@ -2,10 +2,10 @@
 var formSubmitEl = document.querySelector("#input-form");
 
 // used to read the click on the dropdown
-// var btnDropDownEl = document.querySelector("#btn-dropdown");
+var searchHistoryContainerEl = document.querySelector("#search-history");
 
-// used to display dropdown
-// var dropdownContainerEl = document.querySelector("#movie-history")
+// clear history button
+var clearHistoryEl = document.querySelector("#clear-history")
 
 
 // submit button for entered movie
@@ -431,6 +431,18 @@ var getViewingOptions = function(imdbid) {
 }
 
 
+
+var createButton = function(movieTitle) {
+
+    
+        searchHistoryButtonEl = document.createElement("button");
+        searchHistoryButtonEl.innerHTML = movieTitle;
+        searchHistoryButtonEl.className = "button is-danger is-fullwidth";
+        searchHistoryContainerEl.appendChild(searchHistoryButtonEl); 
+    
+
+}
+
 var saveHistory = function(movieTitle) {
     
     var existingHistory = JSON.parse(localStorage.getItem("movies"));
@@ -439,39 +451,58 @@ var saveHistory = function(movieTitle) {
 
         searchHistoryArr = existingHistory;
         var isExist = searchHistoryArr.includes(movieTitle);
+        // alert(isExist);
     } 
 
     if (!isExist) {
         searchHistoryArr.push(movieTitle);
         console.log("Search History Array: " + searchHistoryArr);
         localStorage.setItem("movies", JSON.stringify(searchHistoryArr));
-        // createButton(searchCity);
+        createButton(movieTitle);
     }
     
 }
 
 var loadHistory = function() {
-    btnDropDownEl.className = "dropdown is-active";
-    
+       
     var existingHistory = JSON.parse(localStorage.getItem("movies"));
   
     if (existingHistory) {
 
-        // searchHistoryArr = existingHistory;
-        // var isExist = searchHistoryArr.includes(movieTitle);
-    
-
         for (var i=0; i < existingHistory.length; i++) {
-            var dropdownItemEl = document.createElement("p");
-            dropdownItemEl.innerHTML = existingHistory[i];
-            dropdownItemEl.className = "dropdown-item";
-            dropdownContainerEl.appendChild(dropdownItemEl); 
+            createButton(existingHistory[i]);
         }
-        
+   
     }
-    
-    
+
 }
 
-// btnDropDownEl.addEventListener("click", loadHistory);
+
+var clearHistory = function() {
+    
+    var existingHistory = JSON.parse(localStorage.getItem("movies"));
+
+    if (existingHistory) {
+        existingHistory = [];
+        localStorage.setItem("movies", JSON.stringify(existingHistory));
+        location.reload();
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+loadHistory();
+
+
+clearHistoryEl.addEventListener("click", clearHistory);
 formSubmitEl.addEventListener("submit", formHandler);
