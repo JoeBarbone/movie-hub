@@ -7,6 +7,8 @@ var searchHistoryContainerEl = document.querySelector("#search-history");
 // clear history button
 var clearHistoryEl = document.querySelector("#clear-history")
 
+// history button form
+var historyButtonFormEl = document.querySelector("#history-button-form");
 
 // submit button for entered movie
 var btnSubmitEl = document.querySelector("#submit");
@@ -43,8 +45,6 @@ var demoRatingsHeaderContainerEl = document.querySelector("#demo-ratings-header"
 var demoRatingsHeaderEl = document.createElement("p");
 
 var searchHistoryArr = [ ];
-
-
 
 
 
@@ -125,7 +125,6 @@ var getMovie = function() {
             saveHistory(movieTitle);    
     })
 
-    
 }
 
 
@@ -141,6 +140,7 @@ var getRatings = function(imdbid) {
     // account for > 100 per day error message. if null, then display count message
     // data.errorMessage 
     
+
 
      fetch("https://imdb-api.com/en/API/Ratings/k_e8wpwz9e/" + imdbid)
          .then(function(response) {
@@ -432,16 +432,30 @@ var getViewingOptions = function(imdbid) {
 
 
 
+var buttonHandler = function(event) {
+    event.preventDefault();
+
+    selectedButton = event.target.dataset.movietitle;
+    
+    document.getElementById("movie-title").value = selectedButton;
+    getMovie(selectedButton);
+
+}
+
+
+
 var createButton = function(movieTitle) {
 
     
         searchHistoryButtonEl = document.createElement("button");
         searchHistoryButtonEl.innerHTML = movieTitle;
+        searchHistoryButtonEl.setAttribute("data-movietitle",movieTitle);
         searchHistoryButtonEl.className = "button is-danger is-fullwidth";
         searchHistoryContainerEl.appendChild(searchHistoryButtonEl); 
-    
 
 }
+
+
 
 var saveHistory = function(movieTitle) {
     
@@ -463,6 +477,8 @@ var saveHistory = function(movieTitle) {
     
 }
 
+
+
 var loadHistory = function() {
        
     var existingHistory = JSON.parse(localStorage.getItem("movies"));
@@ -476,6 +492,7 @@ var loadHistory = function() {
     }
 
 }
+
 
 
 var clearHistory = function() {
@@ -492,17 +509,8 @@ var clearHistory = function() {
 
 
 
-
-
-
-
-
-
-
-
-
 loadHistory();
-
 
 clearHistoryEl.addEventListener("click", clearHistory);
 formSubmitEl.addEventListener("submit", formHandler);
+historyButtonFormEl.addEventListener("click", buttonHandler);
