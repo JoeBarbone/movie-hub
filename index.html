@@ -1,85 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>omDB Movie App</title>
-  </head>
-  <body>
-    <div
-      style="border: 1px solid black"
-      class="container d-flex align-items-start xjustify-content-between"
-    >
-      <div
-        class="row d-flex flex-column align-items-center col-6 input-window m-3"
-      >
-        <h1 class="pt-3">omDB Movie App</h1>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
 
-        <div class="d-flex flex-column input-panel my-auto">
-          <form id="input-form">
-            <input
-              class="my-auto"
-              id="movie-title"
-              type="text"
-              placeholder="enter movie title"
-            />
-            <button class="btn btn-danger" type="submit">submit</button>
-          </form>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie Hub</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <div class="d-flex flex-column input-panel">
-          <h1>Ratings</h1>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>Movie Hub</h1>
 
-          <div id="ratings" class="ratings input-panel">
-            <!-- remove class and id below if okay -->
-            <div id="xratings" class="xinput-panel xratings">
-              <script src="js/test.js"></script>
+    <div class="column is-full container mobile tablet">
+
+        <!-- first box -->
+
+        <div class="column is-half box">
+            <h2 class="ratings-title">Enter Movie Title</h2>
+            <form id="input-form">
+                <input class="input is-normal" id="movie-title" type="text" placeholder="Normal input">
+                <button class="button is-danger is-fullwidth" type="submit">Submit</button>
+            </form>
+            <div class="column is-full input-history">
+                <div class="column list ">
+                    <p><strong>Search History</strong></p>
+                </div>
+                <form id="history-button-form">
+                    <div class="column  list ">
+                        <p id="search-history"></p>
+                    </div>
+                </form>
+                <div class="column  list ">
+                    <p></p>
+                </div>
+                <div class="column list last-list button is-danger is-fullwidth">
+                    <p id="clear-history">Clear History</p>
+                </div>
+
             </div>
-          </div>
         </div>
 
-        <div class="d-flex flex-column input-panel">
-          <h1>Nerd Ratings</h1>
+        <!-- second box -->
 
-          <div id="demo-ratings" class="ratings">
-            <div
-              class="d-flex justify-content-between user-ratings input-panel"
-            >
-              <div id="age-group"></div>
+        <div class="column is-half  box">
 
-              <div id="user-rating"></div>
+            <h2 class="ratings-title">Movie Information</h2>
 
-              <div id="votes" class="text-right"></div>
+            <!--  first column inside the box -->
+
+            <div class="ratings-box" class="column  is-half box">
+                <div class="ratings" class="column list is-half">
+                    <div id="ratings"></div>
+                </div>
+                <!-- <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p>IMBD ID:</p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p>IMBD Rating:</p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list last-list  is-half">
+                    <p>Spoiled Potato rating:</p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list last-list  is-half">
+                    <p>Movie DB Rating:</p>
+                </div> -->
+
+
             </div>
-          </div>
+
+
+            <!--  second column inside the box -->
+
+            <div class="ratings-box" class="column  is-half is-offset-8 box">
+                <div class="ratings" class="column list  is-half">
+                    <p></p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p> </p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list  is-half">
+                    <p> </p>
+                </div>
+                <br>
+                <div class="ratings" class="column  list last-list  is-half">
+                    <p> </p>
+                </div>
+
+            </div>
+
+
         </div>
-      </div>
 
-      <div class="row d-flex flex-column col-6 my-auto mt-5 movie-info">
-        <div id="display-card" class="card">
-          <div id="poster" class="text-center"></div>
+        <!-- third box -->
 
-          <div id="movie-info" class="p-3">Movie Info</div>
+        <div class="column is-half box demographic-box">
 
-          <div class="card-body">
-            <h5><p class="card-title px-3" id="title"></p></h5>
-            <p class="card-text px-3" id="year"></p>
-            <p class="card-text px-3" id="rating"></p>
-            <p class="card-text px-3" id="actors"></p>
-            <p class="card-text px-3" id="plot"></p>
-          </div>
+
+            <h2 class="ratings-title">Demographic Ratings</h2>
+
+            <div id="demo-ratings-header"></div>
+            <div id="demo-ratings" class="demo-ratings is-flex is-justify-content-space-between has-text-centered">
+                
+                <div id="age-group">
+
+                </div>
+
+                <div id="user-rating">
+
+                </div>
+
+                <div id="votes" class="is-flex has-text-right">
+            
+                </div>
+            </div>
+
         </div>
-      </div>
+
+        <!-- fourth box -->
+
+        <div id="result-box" class="column is-one-third box  is-offset-7"> 
+            <!-- <h2 class="ratings-title">title</h2> -->
+            <div id="poster">
+            <div id="movie-info"></div>
+
+            </div>
+            <!-- <img src="https://m.media-amazon.com/images/M/MV5BNzM2YjIwMzgtZTg4Yy00NmJlLWIzOTYtYTQ0Zjc3NjIyZDcyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" /> -->
+            <!-- <p class="fourth-box-p">Lorem ipsum dolor sit amet</p> -->
+            <!-- <p class="fourth-box-p">Lorem ipsum dolor sit amet</p> -->
+            <!-- <p class="fourth-box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> -->
+        </div>
+
+
+        <!-- fifith box -->
+
+        <div class="column is-11 box streaming-platforms" id="last-box">
+            <h2 class="ratings-title ">streaming platforms</h2>
+        </div>
+
+
+        </div>
     </div>
+    <script src="js/script.js" async defer></script>
+</body>
 
-    <script src="js/script.js"></script>
-  </body>
 </html>

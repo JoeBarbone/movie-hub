@@ -1,56 +1,100 @@
-* {
-  background-image: url(popcorn-background.jpg);
+/* Tag Selectors */
+
+body {
+  background-image: url("../images/popcorn-background.jpg");
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #f03a5f;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  color: #f03a5f;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: large;
+}
+
+img {
+  width: 100%;
+  height: 600px;
+  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+/* class Selectors */
 
 .container {
-  xborder: 10px solid red;
-  xheight: 100vh;
+  background-color: #fdfcfc;
+  height: 950px;
+  border-radius: 10px;
 }
 
-.input-window {
-  xborder: 1px solid blue;
-  xbackground-color: blue;
-  xheight: 500px;
+.box {
+  background-color: #f5efef1c;
+  border-radius: 10px;
+  margin: 25px;
+  display: block;
 }
 
-.input-panel {
-  border: 2px solid black;
-  padding: 50px;
-  box-shadow: 3px 4px 5px grey;
-  width: 100%;
+#result-box {
+  background-color: #fcfcfc1c;
+  height: 600px;
+  position: absolute;
+  bottom: 1020px;
+  top: 10px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
-.input-panel input {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 10px;
-  border-bottom: 2px solid black;
+.input-history {
+  background-color: rgba(255, 255, 255, 0);
+  height: 150px;
+  border-radius: 10px;
+  padding: 0px;
 }
 
-.input-panel button {
-  margin-top: 50px;
-  width: 100%;
+.list {
+  padding: 4px;
+  border: solid #f5f3f3;
+
+  border-width: 0.01px;
+  text-align: center;
 }
 
-.card img {
-  height: 100%;
+.last-list {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
-.card {
-  display: none;
-  box-shadow: 3px 4px 5px grey;
+.input {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-/* .movie-info {
-    
-    xborder: 1px solid orange;
-    xbackground-color: orange;
-    xheight: 500px;
-    
-} */
+.is-danger {
+  border-bottom-right-radius: 0.5;
+  border-bottom-left-radius: 0.5;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
 
 .ratings {
+<<<<<<< HEAD
   display: none;
 }
 
@@ -59,4 +103,118 @@
   padding: 10px;
   font-weight: bold;
   width: 100%;
+=======
+  font-weight: bold;
+  display: inline;
+  text-align: left;
+}
+
+.ratings-box {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  margin: 3px;
+  text-align: left;
+}
+
+.demographic-list {
+  padding: 4px;
+  border: solid #f5f3f3;
+  position: relative;
+  bottom: 205px;
+  border-width: 0.01px;
+  text-align: center;
+}
+
+.demographic-list2 {
+  padding: 4px;
+  border: solid #f5f3f3;
+  position: relative;
+  bottom: 410px;
+  border-width: 0.01px;
+  text-align: center;
+}
+
+.fourth-box-p {
+  margin: 20px;
+}
+
+.streaming-platforms {
+  position: relative;
+  top: 50px;
+}
+
+/* Id selectors */
+
+#last-box {
+  position: relative;
+  bottom: 1000px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 765px) {
+  #result-box {
+    background-color: #f5efef1c;
+    height: 1200px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+  }
+
+  .ratings-box {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+  }
+
+  .container {
+    background-color: #fdfcfc;
+    height: 3900px;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .box {
+    background-color: #f5efef1c;
+    height: 400px;
+    border-radius: 10px;
+    margin: 25px;
+    display: block;
+  }
+
+  p {
+    font-size: x-large;
+  }
+
+  .demographic-list {
+    padding: 4px;
+    border: solid #f5f3f3;
+    position: relative;
+    top: 35px;
+    border-width: 0.01px;
+    text-align: center;
+  }
+
+  .demographic-list2 {
+    padding: 4px;
+    border: solid #f5f3f3;
+    position: relative;
+    top: 70px;
+    border-width: 0.01px;
+    text-align: center;
+  }
+
+  .demographic-box {
+    height: 900px;
+  }
+
+  #last-box {
+    position: relative;
+    top: 200px;
+  }
+>>>>>>> jb-develop
 }
