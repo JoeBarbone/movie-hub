@@ -1,6 +1,4 @@
 
-Movie-Hub allows users to search individual movies, displaying the movie poster, summary, ratings from different sources.
-
 # Movie-Hub
 
 ## Project Description:
@@ -14,8 +12,6 @@ As a movie-watcher, Movie Hub gives me movie information and ratings in one plac
 ## Wireframe:
 
 [Movie-Hub](https://github.com/JoeBarbone/movie-hub/files/8810176/Movie-Hub.pdf)
-
-As a movie-watcher, Movie Hub gives me movie information and ratings in one place to help determine if I would like to watch the movie.
 
 ## APIs Utilized:
 
