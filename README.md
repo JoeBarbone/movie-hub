@@ -11,9 +11,9 @@ As a movie-watcher, Movie Hub gives me movie information and ratings in one plac
 
 ## Wireframe:
 
-https://www.lucidchart.com/
+- [Lucid](https://www.lucidchart.com/)
 
-[Movie-Hub](https://github.com/JoeBarbone/movie-hub/files/8810176/Movie-Hub.pdf)
+- [Movie-Hub](https://github.com/JoeBarbone/movie-hub/files/8810176/Movie-Hub.pdf)
 
 ## APIs Utilized:
 
@@ -32,6 +32,4 @@ https://www.lucidchart.com/
 
 ## Screenshot:
 
-[Screenshot of website](INS<img width="1280" alt="Screen Shot 2022-06-03 at 5 55 21 PM" src="https://user-images.githubusercontent.com/101817569/171965678-007f824a-7716-4730-9793-f0a9d7c6a98f.png">
-ERT PNG![image]
- OR JPG HERE)
+[Screenshot of website](<img width="1280" alt="Screen Shot 2022-06-03 at 5 55 21 PM" src="https://user-images.githubusercontent.com/101817569/171965678-007f824a-7716-4730-9793-f0a9d7c6a98f.png">)
