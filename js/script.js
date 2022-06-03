@@ -132,7 +132,7 @@ var getMovie = function() {
 var getRatings = function(imdbid) {
     ratingsContainerEl.innerHTML = "";
     var imdbid = imdbid;
-    //ratingContainerEl = document.querySelector("#ratings");
+    ratingsContainerEl = document.querySelector("#ratings");
     var ratingsEl = document.createElement("div");
     
 
@@ -295,10 +295,10 @@ var getViewingOptions = function(imdbid) {
     var viewSubHeadingEl = document.createElement("p");
 
     // clear data
-    viewOptionsHeadingContainerEl.innerHTML = "";
-    viewRentOptionsHeadingContainerEl.innerHTML = "";
-    viewBuyOptionsHeadingContainerEl.innerHTML = "";
-    viewSubOptionsHeadingContainerEl.innerHTML = "";
+    // viewOptionsHeadingContainerEl.innerHTML = "";
+    // viewRentOptionsHeadingContainerEl.innerHTML = "";
+    // viewBuyOptionsHeadingContainerEl.innerHTML = "";
+    // viewSubOptionsHeadingContainerEl.innerHTML = "";
 
     // setting heading data
     viewOptionsHeadingEl.innerHTML = "Viewing Options";
@@ -330,10 +330,10 @@ var getViewingOptions = function(imdbid) {
         
 
         // adding data to container element to display
-        viewOptionsHeadingContainerEl.appendChild(viewOptionsHeadingEl);
-        viewRentOptionsHeadingContainerEl.appendChild(viewRentHeadingEl);
-        viewBuyOptionsHeadingContainerEl.appendChild(viewBuyHeadingEl);
-        viewSubOptionsHeadingContainerEl.appendChild(viewSubHeadingEl);
+        //viewOptionsHeadingContainerEl.appendChild(viewOptionsHeadingEl);
+        //viewRentOptionsHeadingContainerEl.appendChild(viewRentHeadingEl);
+        //viewBuyOptionsHeadingContainerEl.appendChild(viewBuyHeadingEl);
+        //viewSubOptionsHeadingContainerEl.appendChild(viewSubHeadingEl);
         
         var iconPath = "";
     
@@ -393,7 +393,7 @@ var getViewingOptions = function(imdbid) {
                         viewRentEl.innerHTML = "";
 
                         viewRentEl.innerHTML = "<img src='" + iconPath + "' />" + "&emsp;" + "Price: $" + price + "&emsp;" + "Format: " + format + "&emsp;" + "<br /><br />";
-                        viewRentContainerEl.appendChild(viewRentEl);
+                        // viewRentContainerEl.appendChild(viewRentEl);
                         break;
 
                     case "buy":
@@ -405,7 +405,7 @@ var getViewingOptions = function(imdbid) {
                         viewBuyEl.innerHTML = "";
                         
                         viewBuyEl.innerHTML = "<img src='" + iconPath + "' />" + "&emsp;" + "Price: $" + price + "&emsp;" + "Format: " + format + "&emsp;" +  "<br /><br />";
-                        viewBuyContainerEl.appendChild(viewBuyEl);
+                        // viewBuyContainerEl.appendChild(viewBuyEl);
                         break;
 
                     case "sub":
