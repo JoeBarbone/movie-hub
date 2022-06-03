@@ -29,7 +29,7 @@ As a movie-watcher, Movie Hub gives me movie information and ratings in one plac
 ## Links:
 
 - [GitHub](https://github.com/JoeBarbone/movie-hub.git)
-- [Live]()
+- [Live]()(http://joebarbone.github.io/movie-hub/)
 
 
 ## Screenshot:
