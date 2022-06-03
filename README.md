@@ -31,13 +31,8 @@ As a movie-watcher, Movie Hub gives me movie information and ratings in one plac
 - [GitHub](https://github.com/JoeBarbone/movie-hub.git)
 - [Live]()
 
-## Screenshot:
-
-[Screenshot of website](INSERT PNG OR JPG HERE)
-
-- [Lucid](https://lucidchart.com/)
-
 
 ## Screenshot:
 
-[Screenshot of website](INSERT PNG OR JPG HERE)
+[Screenshot of website](INSERT PNG![image](https://user-images.githubusercontent.com/101817569/171956562-a0d67eab-43f8-4bc6-b1f2-5079651368c2.png)
+ OR JPG HERE)
