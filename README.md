@@ -30,5 +30,6 @@ As a movie-watcher, Movie Hub gives me movie information and ratings in one plac
 
 ## Screenshot:
 
-[Screenshot of website](INSERT PNG![image](https://user-images.githubusercontent.com/101817569/171956562-a0d67eab-43f8-4bc6-b1f2-5079651368c2.png)
+[Screenshot of website](INS<img width="1280" alt="Screen Shot 2022-06-03 at 5 55 21 PM" src="https://user-images.githubusercontent.com/101817569/171965678-007f824a-7716-4730-9793-f0a9d7c6a98f.png">
+ERT PNG![image]
  OR JPG HERE)
